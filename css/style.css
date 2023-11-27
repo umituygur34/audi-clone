@@ -252,6 +252,38 @@ section.container>h2{
 }
 
 /*TOPICS*/
-.topics .card{
 
+/*HIGHLIGHT*/
+
+.highlight h2{
+    font-family:"AudiType-ExtendedNormal";
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.highlight button{
+    display: inline;
+    width: 50%;
+    background:none;
+    border:1px solid black;
+    padding: 15px 5px;
+}
+@media(mid-width:576px){
+    .highlight button{
+        width: 50%;
+    }
+}
+.highlight button:hover{
+    color: gray;
+}
+
+.highlight .car-spec{
+    font-size: 0.7rem;
+    margin-top: 20px;
+}
+
+
+.highlight p{
+    margin: 0px;
+    margin-bottom: 5px;
 }
