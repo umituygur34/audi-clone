@@ -38,7 +38,9 @@
 body{
     font-family: AudiType-WideNormal;
 }
-
+a{
+    text-decoration: none;
+}
 
 /*NAVBAR*/
 .offcanvas.offcanvas-top{
@@ -217,7 +219,7 @@ section.container>h2{
    
 }
 .zoom-card .image{
-   
+    cursor: pointer;
     overflow: hidden;
 }
 .zoom-card img{
@@ -232,7 +234,7 @@ section.container>h2{
    
     transform: scale(1.2);
     transition: 0.5s;
-    cursor: pointer;
+   
     filter: brightness(70%);
 
 }
@@ -287,3 +289,82 @@ section.container>h2{
     margin: 0px;
     margin-bottom: 5px;
 }
+
+/*FOOTER*/ 
+
+footer a{
+color: rgb(231, 231, 231);    
+
+}
+
+footer .copyright{
+    font-size: 0.8rem;
+    padding: 20px;
+}
+footer .menu{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+footer .menu a{
+    flex: 200px 0 1;
+}
+
+@media(min-width:576px){
+    footer .menu a{
+        flex-basis: 150px;
+    }
+}
+
+@media(min-width:768px){
+    footer .menu a{
+        flex-basis: 100px;
+    }
+}
+
+@media(min-width:1200px){
+    footer .menu a{
+        flex-basis: auto;
+    }
+}
+
+
+@media(min-width:768px){
+    
+    footer .accordion{
+        display: flex!important;
+        justify-content: space-between;
+        
+    }
+}
+
+@media(min-width:768px){
+    
+    footer .accordion-item {
+        border: 0 !important;
+    }
+}
+
+footer .accordion-button{
+    font-size: 2rem;
+}
+@media(min-width:768px){
+    
+    footer .accordion-button::after {
+        background-image: none;
+    }
+}
+
+
+
+
+@media(min-width:768px){
+    
+    footer .accordion-collapse{
+        display: block!important;
+    }
+}
+
